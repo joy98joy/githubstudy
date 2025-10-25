@@ -20,7 +20,9 @@ def menu():
 
     return render_template('menu.html')
 
-
+@app.route("/test1")
+def test1():
+    return render_template('test1.html')
 if __name__ == '__main__':
 
     app.run(host='0.0.0.0', port=8080)
